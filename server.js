@@ -30,5 +30,5 @@ app.use('/posts', require('./app/routes/post.router'));
 
 // listen for requests
 app.listen(config.serverPost, function(){
-    console.log("Server is listening on port " + config.serverPost);
+    console.log("Server is listening on port " + config.serverPort);
 });
