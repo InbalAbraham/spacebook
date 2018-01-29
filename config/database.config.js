@@ -1,3 +1,4 @@
 module.exports = {
-    url: 'mongodb://localhost:27017/spacebook'
+    url: MONGODB_URI
+    //url: 'mongodb://localhost:27017/spacebook'
 }
