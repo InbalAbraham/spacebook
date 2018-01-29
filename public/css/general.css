@@ -1,0 +1,27 @@
+hr.style1{
+	border-top: 1px solid #8c8b8b;
+}
+
+.collapsible-header{
+  color: black;
+  font-weight: bold;
+}
+
+.collapsible-header:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.comment {
+  border-radius: 4px;
+  background-color: rgb(215, 215, 193);
+  padding: 5px;
+  border: 1px solid;
+  margin: 5px 10px 5px 10px;
+  border-color: #dcdcdc;
+}
+
+textarea {
+	resize: none;
+	border-width: 0px;
+}
