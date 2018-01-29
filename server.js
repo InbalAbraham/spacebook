@@ -19,16 +19,18 @@ mongoose.connection.on('error', function() {
 
 mongoose.connection.once('open', function() {
     console.log("Successfully connected to the database");
-})
+});
 
+app.set('port', (process.env.PORT || 3000));
 
-app.get('/', function(req, res){
-    res.json({"message": "Welcome to spacebook application. enjoy!"});
+app.get('/', function(request, response) {
+    var result = 'App is running'
+    response.send(result);
 });
 
 app.use('/posts', require('./app/routes/post.router'));
 
 // listen for requests
-app.listen(config.serverPost, function(){
-    console.log("Server is listening on port " + config.serverPort);
+app.listen(app.get('port'), function() {
+    console.log('App is running, server is listening on port ', app.get('port'));
 });
